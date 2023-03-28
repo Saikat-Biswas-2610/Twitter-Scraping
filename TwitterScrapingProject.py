@@ -40,7 +40,7 @@ else:
     st.warning(option, ' cant be empty', icon="⚠️")
 
 
-@st.cache
+@st.cache_data
 def convert_df(df):
     return df.to_csv().encode('utf-8')
 
